@@ -17,7 +17,7 @@ from django.core.mail import send_mail
 from django.contrib import messages
 from virtualenv import session_via_cli
 from LMS import settings
-import pyrebase
+#import pyrebase5
 from django.contrib import auth
 
 
@@ -46,4 +46,6 @@ def postsign(request):
         return render(request, 'userhp.html')
 
 
-#code change from gui
+#code change from nand
+
+
