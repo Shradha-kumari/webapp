@@ -23,6 +23,8 @@ from django.contrib import auth
 
 
 
+
+
 def sign(request):
     return render(request, 'sign.html')
 
