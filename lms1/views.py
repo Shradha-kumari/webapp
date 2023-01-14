@@ -20,7 +20,7 @@ from LMS import settings
 import pyrebase
 from django.contrib import auth
 
-config = {
+"""config = {
   "apiKey": "AIzaSyBh54bhUiOduOlyq6k6DTTeXL_lAg0L94w",
   "authDomain": "cpanel-10ae6.firebaseapp.com",
   "databaseURL":"https://cpanel-10ae6-default-rtdb.firebaseio.com",
@@ -32,7 +32,7 @@ config = {
 
 firebase = pyrebase.initialize_app(config)
 authe = firebase.auth()
-database = firebase.database()
+database = firebase.database()"""
 
 
 
