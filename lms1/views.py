@@ -20,7 +20,8 @@ from LMS import settings
 import pyrebase
 from django.contrib import auth
 
-"""config = {
+config = {
+    """
   "apiKey": "AIzaSyBh54bhUiOduOlyq6k6DTTeXL_lAg0L94w",
   "authDomain": "cpanel-10ae6.firebaseapp.com",
   "databaseURL":"https://cpanel-10ae6-default-rtdb.firebaseio.com",
@@ -28,11 +29,22 @@ from django.contrib import auth
   "storageBucket": "cpanel-10ae6.appspot.com",
   "messagingSenderId": "206710126999",
   "appId": "1:206710126999:web:ee4da3d9d3f7de6bd4ecd2"
+  """
+
+  "apiKey": "AIzaSyBhZVv55hWtbdKavDvs-F4Vzmbbm60cEAE",
+  "authDomain": "ecap-80609.firebaseapp.com",
+  "databaseURL": "https://ecap-80609-default-rtdb.firebaseio.com",
+  "projectId": "ecap-80609",
+  "storageBucket": "ecap-80609.appspot.com",
+  "messagingSenderId": "115895690408",
+  "appId": "1:115895690408:web:16fb66783ae4ed5d8e0e9d",
+  "measurementId": "G-N3PB3RFQX0"
 }
 
 firebase = pyrebase.initialize_app(config)
 authe = firebase.auth()
-database = firebase.database()"""
+database = firebase.database()
+
 
 
 
