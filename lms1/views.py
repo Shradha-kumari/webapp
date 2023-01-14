@@ -17,8 +17,22 @@ from django.core.mail import send_mail
 from django.contrib import messages
 from virtualenv import session_via_cli
 from LMS import settings
-#import pyrebase5
+import pyrebase
 from django.contrib import auth
+
+config = {
+  "apiKey": "AIzaSyBh54bhUiOduOlyq6k6DTTeXL_lAg0L94w",
+  "authDomain": "cpanel-10ae6.firebaseapp.com",
+  "databaseURL":"https://cpanel-10ae6-default-rtdb.firebaseio.com",
+  "projectId": "cpanel-10ae6",
+  "storageBucket": "cpanel-10ae6.appspot.com",
+  "messagingSenderId": "206710126999",
+  "appId": "1:206710126999:web:ee4da3d9d3f7de6bd4ecd2"
+}
+
+firebase = pyrebase.initialize_app(config)
+authe = firebase.auth()
+database = firebase.database()
 
 
 
