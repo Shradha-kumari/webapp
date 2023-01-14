@@ -1,0 +1,84 @@
+<style>
+    table,
+    th,
+    td {
+      text-align: center;
+      border: 3px solid white;
+      border-collapse: collapse;
+      background-color: #96d4d4;
+    }
+  
+    body {
+      background-image: url(https://firebasestorage.googleapis.com/v0/b/cpanel-10ae6.appspot.com/o/bg-01.jpg?alt=media&token=c6d82939-bb59-4ff4-903c-09b0af8c7b28);
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: "Roboto", sans-serif;
+    }
+  
+    h1 {
+      text-align: center;
+      padding-top: 10px;
+      color: azure;
+    }
+  
+    button {
+      width: 320px;
+      height: 35px;
+      margin-top: 20px;
+      border: none;
+      background-color: #49c1a2;
+      color: white;
+      font-size: 18px;
+      border-radius: 3px;
+    }
+    a {
+      text-decoration: none;
+      color: #000000cc;
+    }
+    button:hover {
+      background-color: rgb(236, 136, 203);
+    }
+    button,
+    #lo {
+      cursor: pointer;
+    }
+  
+    #lo:hover {
+      background-color: rgb(236, 136, 203);
+    }
+  
+    a:hover {
+      background-color: rgb(236, 136, 203);
+    }
+  
+    #po {
+      margin-left: 36%;
+      margin-top: 4%;
+    }
+  </style>
+  
+  <body>
+    <div>
+      <h1>Welcome admin</h1>
+  
+      <table id="po" style="width: 400px">
+        <tr>
+          <th>Users</th>
+        </tr>
+        {% for a in e %}
+        <tr style="color: black" id="ui">
+          <td><a href="adminpe?z={{a}}">{{a}}</a><br /></td>
+        </tr>
+        {% endfor %}
+      </table>
+  
+      <button
+        type="button"
+        style="position: absolute; width: 100px; top: 2px; right: 14px"
+        onclick="document.location='logout'"
+      >
+        logout
+      </button>
+    </div>
+  </body>
+  

@@ -1,0 +1,117 @@
+{% if m %}
+
+<script>
+  alert("{{m}}");
+</script>
+
+{% endif %}
+<style>
+  body {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/cpanel-10ae6.appspot.com/o/bg-01.jpg?alt=media&token=c6d82939-bb59-4ff4-903c-09b0af8c7b28);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .forget-box {
+    width: 360px;
+    height: 190px;
+    margin-top: 6%;
+    margin-left: 39%;
+    background-color: white;
+    border-radius: 8px;
+    padding-top: 1.7%;
+    align-items: center;
+  }
+
+  h1 {
+    padding-top: 30px;
+  }
+
+  form {
+    width: 300px;
+    margin-left: 20px;
+  }
+
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  form input {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  input[type="submit"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+  }
+
+  button {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-left: 5.8%;
+  }
+  button:hover {
+    background-color: rgb(236, 136, 203);
+  }
+  button {
+    cursor: pointer;
+  }
+
+  .as {
+    margin-top: 15%;
+    align-items: center;
+  }
+  #lo {
+    color: aliceblue;
+    margin-left: 40.5%;
+  }
+  #po {
+    margin-top: 10px;
+  }
+</style>
+
+<body>
+  <div id="lo">
+    <h1>Welcome to CertiHub</h1>
+  </div>
+  <div class="forget-box">
+    <body>
+      <div id="po">
+        <button type="button" onclick="document.location='create'">
+          Register Certification Details
+        </button>
+        <button type="button" onclick="document.location='existing'">
+          Existing Certification Details
+        </button>
+        <button
+          type="button"
+          style="position: absolute; width: 100px; top: 30px; right: 14px"
+          onclick="document.location='logout'"
+        >
+          logout
+        </button>
+      </div>
+    </body>
+  </div>
+
+  <h3 style="position: absolute; width: 100px; top: 2px; right: 16%">{{e}}</h3>
+</body>
