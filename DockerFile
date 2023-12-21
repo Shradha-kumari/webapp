@@ -9,3 +9,4 @@ EXPOSE 8080
 CMD ["java","-jar","jenkins.war"]
 
 
+
